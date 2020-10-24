@@ -12,6 +12,7 @@
 
 <bean class="com.springcore.collections.Emp" name="emp1">
  <property name="name" value="pritam"></property>
+ <!-- LIST -->
  <property name="phones">
     <list>
         <value>134436546</value>
@@ -21,7 +22,15 @@
         <null/>
     </list>
  </property>
+ <!--  if you have only one value use as below  -->
+  <!-- same for others -->
+ <!--
+  <property name="phones">
+    <value>36576852</value>
+ </property>  -->
  
+ 
+ <!-- SET -->
  <property name="addresses">
     <set>
         <value>delhi</value>
@@ -30,15 +39,21 @@
     </set>
  </property>
  
+ <!-- MAP -->
  <property name="courses">
     <map>
-      <entry key="java" value="2months"></entry>
-      <entry key="nodejs" value="3months"></entry>
-      <entry key="php" value="2months"></entry>
+      <entry key="java" value="2months"/>
+      <entry key="nodejs" value="3months"/>
+      <entry key="php" value="2months"/>
     </map>
  </property>
-
+<!--Properties-->
+<property name="PersonalInfo">
+    <props>
+      <prop key="name">san</prop>
+     <prop key="profile">software developer</prop>
+    </props>
+</property>
 </bean>
- 
  
  </beans>

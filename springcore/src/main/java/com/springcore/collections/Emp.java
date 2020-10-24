@@ -2,24 +2,31 @@ package com.springcore.collections;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 public class Emp {
-	public Emp(String name, List<String> phones, Set<String> addresses, Map<String, String> courses) {
+	private String name;
+	private List<String> phones;
+    private Set<String> addresses;
+    private Map<String,String> courses;
+    private Properties PersonalInfo;
+	
+	public Emp(String name, List<String> phones, Set<String> addresses, Map<String, String> courses,
+			Properties personalInfo) {
 		super();
 		this.name = name;
 		this.phones = phones;
 		this.addresses = addresses;
 		this.courses = courses;
+		PersonalInfo = personalInfo;
 	}
+
 	public Emp() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	private String name;
-	private List<String> phones;
-    private Set<String> addresses;
-    private Map<String,String> courses;
+	
 	public String getName() {
 		return name;
 	}
@@ -43,6 +50,12 @@ public class Emp {
 	}
 	public void setCourses(Map<String, String> courses) {
 		this.courses = courses;
+	}
+	public Properties getPersonalInfo() {
+		return PersonalInfo;
+	}
+	public void setPersonalInfo(Properties personalInfo) {
+		PersonalInfo = personalInfo;
 	}
 	
 	
