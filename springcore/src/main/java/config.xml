@@ -33,4 +33,8 @@
  
   <!--  values as p schema-->
  <bean class="com.springcore.Student" name="student3"  p:studentId="123456"  p:studentName="lucky" p:studentAddress="bihar"/>
+ 
+ 
+ 
+ 
  </beans>
